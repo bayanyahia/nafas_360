@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>اختبار نفس 360</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fefefe;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    h1 {
+      text-align: center;
+      color: #7B1FA2;
+    }
+    .question {
+      background: #f3f3f3;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #7B1FA2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #4A148C;
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px solid #B39DDB;
+      border-radius: 10px;
+      background-color: #f9f5ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>اختبار نفس 360 - ما الذي يناسبك أكثر؟</h1>
+  <form id="quizForm">
+    <div class="question">
+      1. عندما أشعر بالحزن، أفضل:
+      <label><input type="radio" name="q1" value="robot"> أن أحتضن دُميتي أو شخص أحبه.</label>
+      <label><input type="radio" name="q1" value="vr"> أن أكون في مكان هادئ وخيالي.</label>
+    </div>
+    <div class="question">
+      2. أحب أكثر:
+      <label><input type="radio" name="q2" value="robot"> اللعب مع ألعاب تتحرك وتتحدث.</label>
+      <label><input type="radio" name="q2" value="vr"> ارتداء نظارة والانتقال لعالم خيالي.</label>
+    </div>
+    <div class="question">
+      3. هل تحب الجلوس لفترة طويلة لمشاهدة القصص أو المناظر؟
+      <label><input type="radio" name="q3" value="robot"> لا أحب الجلوس كثيرًا.</label>
+      <label><input type="radio" name="q3" value="vr"> نعم، خاصة إذا كان المكان خيالي وجميل.</label>
+    </div>
+    <div class="question">
+      4. أي نوع من الأنشطة تحب أكثر؟
+      <label><input type="radio" name="q4" value="robot"> الرقص والغناء والحركة.</label>
+      <label><input type="radio" name="q4" value="vr"> المغامرات داخل ألعاب تشبه الأحلام.</label>
+    </div>
+    <div class="question">
+      5. هل تتحدث بسهولة عن مشاعرك؟
+      <label><input type="radio" name="q5" value="robot"> أحيانًا، إذا شعرت بالأمان والحب.</label>
+      <label><input type="radio" name="q5" value="vr"> لا أفضل التحدث، أحب فقط أن أهرب لمكان مريح.</label>
+    </div>
+    <div class="question">
+      6. ماذا تفعل عندما تكون غاضبًا أو خائفًا؟
+      <label><input type="radio" name="q6" value="robot"> أحب أن أكون بجانب شيء يواسيني.</label>
+      <label><input type="radio" name="q6" value="vr"> أهرب بخيالي لمكان لا يوجد فيه خوف.</label>
+    </div>
+    <div class="question">
+      7. ما الذي يجعلك تشعر بالراحة أكثر بعد يوم طويل؟
+      <label><input type="radio" name="q7" value="robot"> أن ألعب أو أتكئ على شيء ناعم ومحبوب.</label>
+      <label><input type="radio" name="q7" value="vr"> أن أغلق عيني وأتخيل مكان هادئ وجميل.</label>
+    </div>
+    <div class="question">
+      8. كيف تتعلم بشكل أفضل؟
+      <label><input type="radio" name="q8" value="robot"> عندما ألعب وأتحرك مع شيء يتكلم معي.</label>
+      <label><input type="radio" name="q8" value="vr"> عندما أشاهد وأسمع وأشعر أنني داخل القصة.</label>
+    </div>
+    <div class="question">
+      9. في رأيك، من هو "الصديق" المثالي لك؟
+      <label><input type="radio" name="q9" value="robot"> صديق يلعب معي ويحضنني إذا حزنت.</label>
+      <label><input type="radio" name="q9" value="vr"> صديق يأخذني معه لعالم مليء بالمغامرات.</label>
+    </div>
+    <div class="question">
+      10. عندما تكون في المدرسة وتشعر بالتوتر، ماذا تتمنى؟
+      <label><input type="radio" name="q10" value="robot"> أن يأتي صديق لطيف يواسيني.</label>
+      <label><input type="radio" name="q10" value="vr"> أن أهرب لعالم هادئ لأتنفس وأسترخي.</label>
+    </div>
+    <div class="question">
+      11. هل تظن انه من الممكن التغلب على الحالات النفسية بطريقة عادية ام يحتاج ذلك الى مجهود
+      <label><input type="radio" name="q10" value="robot"> أشعر انني فقط احتاج الى دعم عادي او حتى شخص للتشجيع</label>
+      <label><input type="radio" name="q10" value="vr"> أشعر بأنه علي ان ابذل مجهوداكبر وتكون طريقة مبتكرة للتغلب على هذا</label>
+    </div>
+    <button type="button" onclick="calculateResult()">عرض النتيجة</button>
+  </form>
+  <div id="result"></div>
+  <script>
+    function calculateResult() {
+      let robot = 0;
+      let vr = 0;
+      const answers = document.querySelectorAll('input[type="radio"]:checked');
+      answers.forEach(answer => {
+        if (answer.value === "robot") robot++;
+        else if (answer.value === "vr") vr++;
+      });
+
+      let resultMessage = "";
+      if (robot >= vr) {
+        resultMessage = "يتلاءم معك جهاز الروبوت.";
+      } else {
+        resultMessage = "يتلاءم معك جهاز الواقع الافتراضي (VR).";
+      }
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = resultMessage;
+
+      if (resultMessage.includes("الروبوت")) {
+        resultDiv.innerHTML += '<br><img src="robot.jpg" alt="طفل مع روبوت" style="margin-top:20px; max-width:100%; border-radius:12px">';
+      } else {
+        resultDiv.innerHTML += '<br><img src="vr.jpg" alt="طفل مع نظارة VR" style="margin-top:20px; max-width:100%; border-radius:12px">';
+      }
+    }
+  </script>
+</body>
+</html>
